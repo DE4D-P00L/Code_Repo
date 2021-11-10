@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#eee;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    flex-grow: 0;
+}
+li{
+    width: 50vw;
+    height: 250px;
+}
+
+a{
+    display:inline-block;
+    height:100%;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding-top: 90px;
+    transition: all 150ms ease-in;
+}
+
+a:hover{
+    background-color: #777;
+    font-size: 3em;
+    color: #fff;
+}
+
+
