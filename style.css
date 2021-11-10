@@ -14,8 +14,6 @@ ul{
     list-style: none;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    flex-grow: 1;
-    columns: 2;
 }
 li{
     height: 250px;
