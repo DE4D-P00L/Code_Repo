@@ -15,10 +15,12 @@ ul{
     /* flex-direction: column; */
     flex-wrap: wrap;
     flex-grow: 0;
+    columns: 2;
+    padding: 0 1vw;
 }
 li{
-    width: 50vw;
     height: 250px;
+    width: 49vw;
 }
 
 a{
