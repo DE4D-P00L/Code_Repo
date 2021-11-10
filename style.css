@@ -14,13 +14,12 @@ ul{
     list-style: none;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    flex-grow: 0;
+    flex-grow: 1;
     columns: 2;
-    padding: 0 1vw;
 }
 li{
     height: 250px;
-    width: 49vw;
+    width: calc(100vw/3);
 }
 
 a{
