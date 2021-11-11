@@ -10,7 +10,7 @@ while (true){
     var UPass = prompt("Enter Password","Password");
 
     if(UId == database.id && UPass == database.pass){
-        document.write("<H1 style = "{text-align:center;}">Welcome</H1>");
+        document.write("<H1 style = '{text-align:center;}'>Welcome</H1>");
         break;
     }
 
