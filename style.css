@@ -9,11 +9,14 @@ html{
 }
 
 ul{
-    display: flex;
+    /* display: flex;
     align-items: center;
     list-style: none;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
 }
 li{
     height: 250px;
@@ -39,9 +42,15 @@ a:hover{
 }
 
 @media only screen and (max-device-width: 480px) {
-    li{
-        height: calc(100vh/3);
-        width: 100vw;
+    ul{
+        /* display: flex;
+        align-items: center;
+        list-style: none;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
     }
     
 }
