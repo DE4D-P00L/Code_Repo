@@ -1,3 +1,15 @@
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:#131c21;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #30383d; 
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,22 +24,35 @@
 }
 
 .tl{
-    background-color: #ff0000;
+    background-color: #2a2f32;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-right: 2px solid #30383d;
 }
 .tr{
-    background-color: #00ff22;
+    background-color: #2a2f32;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
 .bl{
-    background-color: #003cff;
+    background-color: #131c21;
     grid-row: 2 / 3;
     order: 1;
+    overflow-y: scroll;
+    padding: 20px 10px;
 }
 .br{
-    background-color: #969696;
     grid-row: 2 / 3;
     order: 2;
+    background-image: url("back.jfif");
+    background-position: center;
+    background-size: contain;
 }
 
 .br ul{
@@ -95,3 +120,94 @@
     padding: 10px 10px;
     font-weight: 500;
 }
+
+
+.contact-list .contact{
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    /* border: 1px solid #30383d; */
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.contact-list .contact .user{
+    display: flex;
+}
+.contact-list .contact .user .image{
+    display:inline-block;
+    width:50px;
+    aspect-ratio: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.contact-list .contact span{
+    font-size: 0.9em;;
+}
+
+.tl .User{
+    display: flex;
+    align-items: center;
+}
+
+.tl .User .Uimage{
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.tl .User .UName{
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.tl .menu{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 120px;
+}
+
+.tl .menu .links .link{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.tr .RUser{
+    display: flex;
+    align-items: center;
+}
+
+.tr .RUser .RUimage{
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.tr .RUser .RUName{
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.tr .Rmenu{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 120px;
+    margin-right: 20px;
+}
+
+.tr .Rmenu .links .link{
+    text-decoration: none;
+    color: #fff;
+}
+
