@@ -53,6 +53,7 @@
     background-image: url("back.jfif");
     background-position: center;
     background-size: contain;
+    position: relative;
 }
 
 .br ul{
@@ -211,3 +212,80 @@
     color: #fff;
 }
 
+.br .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display:flex;
+    height:60px;
+    width: 100%;
+    z-index: 2;
+    background-color: #1e2428;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding:10px 20px;
+}
+
+.br .footer #search{
+    display:inline-block;
+    height:45px;
+    z-index: 2;
+    background-color: #33383b;
+    border: none;
+    border-radius: 100vw;
+    width:80%;
+    padding-left: 20px;
+    color: #fff;
+    margin: 0 8px;
+
+}
+
+.icon{
+    font-size: 1.3em;
+    color: rgb(151, 151, 151);
+    margin: 0 8px;
+}
+
+.attach{
+    font-size: 1em;
+    color: rgb(151, 151, 151);
+    margin: 0 8px;
+}
+
+button{
+    background-color:#1e2428;
+    border: none;
+    font-size: 1.3em;
+    color: rgb(151, 151, 151);
+    margin: 0 8px;
+}
+
+button i{
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .tl, .bl{
+       display: none; 
+    }
+
+    .tr, .br{
+        grid-column: 1/-1;
+    }
+    .br ul{
+        padding:50px 15px;
+    }
+
+    .br ul li span{
+        height: 60px !important;
+    }
+
+    .tr .Rmenu{
+        width: 100px;
+    }
+
+    .tr {
+       padding: 15px 10px; 
+    }
+}
