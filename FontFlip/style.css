@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222255;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.char{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    cursor:move;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+    line-height: .9em;
+}
