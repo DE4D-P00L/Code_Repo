@@ -16,11 +16,12 @@ while (true){
 
     else{
         if(counter >= 3){
-            alert("You failed 3 times");
+            alert("You can't login");
             break;
         }
         else{
             if(!confirm("Want to try again?")){
+                alert("You pressed Cancel")
                 break;
             }
         }
