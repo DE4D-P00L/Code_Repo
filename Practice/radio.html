@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Radio Button</title>
+    <script language="javascript">
+        function Alert() {
+            setTimeout(delayAlert,100);
+        }
+
+        function delayAlert(){
+            console.log(form1.radio)
+            alert(form1.radio.value+" is Selected");
+        }
+    </script>
+</head>
+<body>
+    <form name = "form1">
+        Radio Button 1 <input type="radio" name="radio" id="r1" value="RadioButton1" onChange = "Alert()"><br>
+        Radio Button 2 <input type="radio" name="radio" id="r2" value="RadioButton2" onChange = "Alert()"><br>
+        Radio Button 3 <input type="radio" name="radio" id="r3" value="RadioButton3" onChange = "Alert()"> 
+    </form>
+</body>
+</html>

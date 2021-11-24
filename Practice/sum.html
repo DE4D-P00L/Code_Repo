@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Sum</title>
+    <script language="javascript">
+        function sum(){
+            var first = parseInt(form1.i1.value);
+            var second = parseInt(form1.i2.value);
+            var sum = "Sum of "+first+" and "+second+" is "+(first+second);
+            form1.i3.value = sum;
+        }
+    </script>
+</head>
+<body>
+   <form name="form1"> 
+       <table cellpadding="5px" cellspacing="0">
+           <tr>
+               <td>First No.<input type="text" name="i1" id="1" placeholder="First Number"></td>
+               <td>Second No.<input type="text" name="i2" id="2" placeholder="Second Number"></td>
+           </tr>
+           <tr>
+               <td><input type="text" name="i3" id="3" placeholder="Sum"></td>
+           </tr>
+           <tr>
+               <th colspan="2"><input type="button" value="SUM" onclick="sum();"></th>
+           </tr>
+       </table>
+   </form> 
+</body>
+</html>

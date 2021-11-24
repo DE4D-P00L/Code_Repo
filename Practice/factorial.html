@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Factorial</title>
+    <script language="javascript">
+        function factorial() {
+            var fact = 1;
+            var n = parseInt(prompt("Enter the number","5"));
+            for (var i = n; i > 0;i--) {
+                fact *= i;
+            }
+            alert("Factorial of "+n+" is "+fact);
+        }
+    </script>
+</head>
+<body onLoad="factorial();">
+</body>
+</html>
