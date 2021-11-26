@@ -6,6 +6,7 @@
 
 html{
     background-color:#eee;
+    overflow-x: hidden;
 }
 
 ul{
