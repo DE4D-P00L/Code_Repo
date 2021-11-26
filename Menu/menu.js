@@ -1,12 +1,15 @@
 var btn = document.querySelector("#menu");
 var menu = document.querySelector(".menu");
+var image = document.querySelector(".scrollarea");
 
 btn.addEventListener("click", ()=>{
     if(btn.checked){
         menu.classList.add("active");
+        image.style.backgroundSize = "300%";
     }
     else{
         menu.classList.remove("active");
+        image.style.backgroundSize = "cover";
     }
 })
 
@@ -16,9 +19,8 @@ const hmb = document.querySelectorAll('span');
 console.log(hmb);
 
 window.onscroll = () => {
-    console.log(window.innerHeight)
     if (window.scrollY > window.innerHeight - 58) {
-        navbar.style.backgroundColor = "#333";
+        navbar.style.backgroundColor = "#303635";
         hm.style.backgroundColor = "#000";
         hmb.forEach((bar) => {
             bar.style.backgroundColor = "#fff";

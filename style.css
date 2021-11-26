@@ -20,7 +20,7 @@ ul{
 }
 li{
     height: 250px;
-    min-width: calc(100vw/3);
+    /* min-width: calc(100vw/3); */
 }
 
 a{
