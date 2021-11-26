@@ -16,7 +16,8 @@ const hmb = document.querySelectorAll('span');
 console.log(hmb);
 
 window.onscroll = () => {
-    if (window.scrollY > 500) {
+    console.log(window.innerHeight)
+    if (window.scrollY > window.innerHeight - 58) {
         navbar.style.backgroundColor = "#333";
         hm.style.backgroundColor = "#000";
         hmb.forEach((bar) => {
