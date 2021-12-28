@@ -169,7 +169,12 @@ h3{
         /* height: calc(100vh - 110px); */
         background-color:rgb(38,38,38);
         border-radius: 15px;
+        overflow-y: scroll;
         /* overflow: hidden; */
+    }
+
+    .row{
+        width: 300px;
     }
 
     .container{
