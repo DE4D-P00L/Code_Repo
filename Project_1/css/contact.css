@@ -203,4 +203,7 @@ h3{
     .btn{
         font-size: .8em;
     }
+    .contacts{
+        padding: 80px 10px;
+    }
 }
