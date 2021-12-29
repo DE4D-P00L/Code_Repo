@@ -11,19 +11,20 @@ html{
 
 .hero-section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     min-height: 100vh;
     background-image: linear-gradient(to right,rgba(0,0,0,1) 15vw,rgba(0,0,0,0.5) 70vw,rgba(0,0,0,0) 90vw),url("../Store_Pages/Pubg/bg.jpg");
     background-position: center;
     background-size: cover;
-    padding: 0px 100px;
+    padding-inline: 10rem;
     flex-wrap: wrap;
 }
 
 .text{
     flex: 1;
+    max-width: 30vw;
     padding: 100px 0px;
 }
 
@@ -33,13 +34,12 @@ html{
     align-items: start;
     flex-direction: column;
     height:100%;
-    max-width: 50rem;
     color: #fff;
 
 }
 
 .content .title{
-    font-size: min(40vw,2.8rem);
+    font-size: 2.8rem;
     
 }
 
@@ -78,17 +78,24 @@ html{
         background-image: linear-gradient(to right,rgba(0,0,0,1) 15vw,rgba(0,0,0,0.5) 70vw,rgba(0,0,0,0) 90vw),url("../Store_Pages/Pubg/bg.jpg");
         background-position: center;
         background-size: cover;
-        padding: 0px 10rem;
+        padding: 0px 0px;
         flex-wrap: wrap;
     }
-    .text{
+    .hero-section .text{
         flex: 1;
-        padding: 100px 0px;
+        width: 100vw;
+        padding: 0px 0px;
         height: 100vh;
+    }
+
+    .content .title{
+        font-size: 2rem;
     }
 
     .video{
         max-width:90vw;
+        /* display: none; */
+        margin: 0 auto;
     }
 
 }
