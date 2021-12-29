@@ -205,5 +205,10 @@ h3{
     }
     .contacts{
         padding: 80px 10px;
+        flex: 1;
+    }
+
+    .form{
+        min-height: 100vh;
     }
 }
