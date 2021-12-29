@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
 }
 
 
@@ -39,7 +40,7 @@ html{
     padding: 10%;
     width: 100%;
     color: #fff;
-    font-family:Roboto, Arial, Helvetica, sans-serif;
+    min-width: 300px;
 }
 
 form{
@@ -61,8 +62,8 @@ input{
 
 .title{
     grid-column: -1/1;
-    margin: 10px 0;
-    font-size: 2.5em;
+    margin: 15px 0;
+    font-size: 3em;
 }
 
 #lname{
@@ -92,7 +93,9 @@ textarea{
     padding: 10px 0;
     margin: 10px 0;
     border-radius: 999px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    width: 50%;
+    min-width: 70px;
 }
 
 .contacts{
@@ -101,13 +104,14 @@ textarea{
     padding: 80px;
 }
 
-h2{
+.contacts>h2{
     color: #fff;
+    font-size: 3rem;
 }
 
-p{
+.contacts>p{
     color: rgb(214, 214, 214);    
-    font-size: 1.4em;
+    font-size: 2.1em;
     margin: 15px 0px;
 }
 
@@ -139,7 +143,7 @@ h3{
 .fas{
     color: #fff;
     padding: 18px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .con{
@@ -179,6 +183,18 @@ h3{
 
     .navbar .logo{
         font-size: 2rem;
+    }
+
+
+    .contacts>h2{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .contacts>p{
+        color: rgb(214, 214, 214);    
+        font-size: 1.8em;
+        margin: 15px 0px;
     }
 
     .fa-bars{
