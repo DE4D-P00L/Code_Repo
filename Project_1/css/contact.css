@@ -4,15 +4,21 @@
     box-sizing: border-box;
 }
 
+
+html{
+    font-size: 62.5%;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     background-color:#9b9b9b;
-    padding: 55px 180px;
-    background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65))
+    padding: 65px 180px;
+    background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65));
+    overflow: hidden;
 }
 
 .content{
@@ -50,7 +56,7 @@ input{
     border: 0;
     border-bottom: 1px solid rgb(99, 102, 110);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .title{
@@ -133,18 +139,19 @@ h3{
 .fas{
     color: #fff;
     padding: 18px;
+    font-size: 1.5rem;
 }
 
 .con{
     color: rgb(214, 214, 214);  
-    font-size: 0.8em;
+    font-size: 1.4rem;
     display: inline-block;
     margin-top: -5px;
     /* width: 70%; */
 }
 
 .cap{
-    font-size: 1.2em;
+    font-size: 1.8rem;
     margin: 6px 0;
 }
 
@@ -155,10 +162,43 @@ h3{
 
 
 @media only screen and (max-width: 768px) {
-    input{
-        font-size: .8em;
+    input,textarea{
+        font-size: 1.2rem;
     }
-    
+    .fas{
+        font-size: 1.9rem;
+    }
+
+    .cap{
+        font-size: 1.5rem;
+    }
+
+    .con{
+        font-size: 1.2rem;  
+    }
+
+    .navbar .logo{
+        font-size: 2rem;
+    }
+
+    .fa-bars{
+        display: inline-block;
+        color:#000;
+        font-size: 2rem;
+        padding:0px 2px;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu{
+        display: inline-block;
+        background-color: #fff;
+        color: #000;
+        z-index: 10;
+        margin:0;
+    }
+
     .content{
         /* display: grid;
         grid-template-columns: 1fr;
@@ -173,6 +213,7 @@ h3{
         /* overflow: hidden; */
     }
 
+
     .row{
         width: 300px;
     }
@@ -184,7 +225,7 @@ h3{
         width: 100%;
         min-height: 100vh;
         background-color:#9b9b9b;
-        padding: 55px 20px;
+        padding: 0px 20px;
         background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65))
     }
     textarea{
@@ -198,17 +239,18 @@ h3{
         height: 100px;
     }
     .title{
-        font-size: 1.5em;
+        font-size: 1.8rem;
     }
     .btn{
-        font-size: .8em;
+        font-size: 1.2em;
     }
     .contacts{
         padding: 80px 10px;
         flex: 1;
+        min-height: 90vh;
     }
 
     .form{
-        min-height: 100vh;
+        min-height: 90vh;
     }
 }

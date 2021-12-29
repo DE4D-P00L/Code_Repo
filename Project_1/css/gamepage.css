@@ -102,4 +102,8 @@ html{
         margin: 0 auto;
     }
 
+    .navbar{
+        font-size:.4rem !important;
+    }
+
 }
