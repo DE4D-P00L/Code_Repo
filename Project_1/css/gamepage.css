@@ -13,12 +13,12 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-image: linear-gradient(to right,rgba(0,0,0,1) 15vw,rgba(0,0,0,0.5) 70vw,rgba(0,0,0,0) 90vw),url("../Store_Pages/Pubg/bg.jpg");
     background-position: center;
     background-size: cover;
-    padding: 0px 10rem;
+    padding: 0px 100px;
     flex-wrap: wrap;
 }
 
@@ -33,13 +33,14 @@ html{
     align-items: start;
     flex-direction: column;
     height:100%;
-    width: 50rem;
+    max-width: 50rem;
     color: #fff;
 
 }
 
 .content .title{
-    font-size: 2.8rem;
+    font-size: min(40vw,2.8rem);
+    
 }
 
 .content .desc{
@@ -84,6 +85,10 @@ html{
         flex: 1;
         padding: 100px 0px;
         height: 100vh;
+    }
+
+    .video{
+        max-width:90vw;
     }
 
 }
