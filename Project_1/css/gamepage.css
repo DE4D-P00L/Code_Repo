@@ -15,7 +15,6 @@ html{
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-    background-image: linear-gradient(to right,rgba(0,0,0,1) 15vw,rgba(0,0,0,0.5) 70vw,rgba(0,0,0,0) 90vw),url("../Store_Pages/Pubg/bg.jpg");
     background-position: center;
     background-size: cover;
     padding-inline: 10rem;
@@ -35,7 +34,7 @@ html{
     flex-direction: column;
     height:100%;
     color: #fff;
-
+    width: 100%;
 }
 
 .content .title{
@@ -75,21 +74,26 @@ html{
         align-items: center;
         width: 100%;
         min-height: 100vh;
-        background-image: linear-gradient(to right,rgba(0,0,0,1) 15vw,rgba(0,0,0,0.5) 70vw,rgba(0,0,0,0) 90vw),url("../Store_Pages/Pubg/bg.jpg");
         background-position: center;
         background-size: cover;
         padding: 0px 0px;
         flex-wrap: wrap;
     }
-    .hero-section .text{
+
+    .text{
         flex: 1;
-        width: 100vw;
-        padding: 0px 0px;
+        max-width: 80vw;
         height: 100vh;
+        padding: 100px 0px;
     }
 
     .content .title{
         font-size: 2rem;
+    }
+
+    .video-section{
+        width: 90vw;
+        height: 100vh;
     }
 
     .video{
