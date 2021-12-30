@@ -32,6 +32,8 @@
     margin-inline: 1.3rem;
 }
 
+
+
 .link a{
     text-decoration: none;
     color: #fff;
@@ -56,6 +58,22 @@
 
 .link a:hover::before{
     transform: scaleX(1.2);
+}
+
+.link.active a{
+    text-decoration: none;
+    color: #000;
+}
+
+.link.active a:hover::before{
+    transform: scaleX(0);
+}
+
+.link.active{
+    background-color: #fff;
+    color: #000;
+    padding: 3px 8px;
+    border-radius: 999px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -98,5 +116,12 @@
 
     .link{
         margin: 10px 0;;
+    }
+
+    .link.active{
+        border-radius:0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
     }
 }
