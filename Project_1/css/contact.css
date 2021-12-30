@@ -18,7 +18,10 @@ html{
     max-height: 100vh;
     background-color:#9b9b9b;
     padding: 65px 180px;
-    background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65));
+    /* background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65)); */
+    background-image: url("../Store_Pages/Images/772411.jpg");
+    background-position: center;
+    background-size: 50%;
     overflow: hidden;
 }
 
@@ -242,7 +245,9 @@ h3{
         min-height: 100vh;
         background-color:#9b9b9b;
         padding: 0px 20px;
-        background-image: linear-gradient(45deg, rgb(25, 28, 32), rgb(65, 65, 65))
+        background-image: url("../Store_Pages/Images/772411.jpg");
+        background-position: center;
+        background-size: 200%;
     }
     textarea{
         grid-column: -1/1;
