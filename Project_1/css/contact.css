@@ -136,7 +136,7 @@ h3{
 
 .row{
     display: flex;
-    width: 400px;
+    max-width: 400px;
     height: 60px;
     /* background-color:#994444; */
     margin: 10px 0px;
