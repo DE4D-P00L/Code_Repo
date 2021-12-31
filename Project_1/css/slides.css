@@ -1,0 +1,51 @@
+.track{
+    display: flex;
+    /* justify-content: center; */
+    width: 400%;
+    height: 100%;
+    animation-name: slide;
+    animation-duration: 12s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+
+}
+
+.game1, .game2, .game3, .game4{
+    display: inline-block;
+    min-width: 25%;
+    aspect-ratio: 2.1;
+}
+
+.game1{
+    background-image: url("../Store_Pages/Valorant/bg.jpg");
+    background-position: center 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.game2{
+    background-image: url("../Store_Pages/CS/bg1.jpg");
+    background-position: center -5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.game3{
+    background-image: url("../Store_Pages/GTAV/1646743.jpg");
+    background-position: center 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game4{
+    background-image: url("../Store_Pages/Genshin_Impact/bgg.jpg");
+    background-position: center 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide{
+    to{
+        transform:translateX(-100%);
+    }
+}

@@ -93,10 +93,7 @@ display: flex; */
 
 
 .slides{
-    background-color: #006eff; 
-    display: grid;
-    place-items: center;
-    font-size: 10vw;
+    overflow: hidden;
     color: #fff;
     width: calc(100% - 20px);
     aspect-ratio: 2.1;
