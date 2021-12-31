@@ -153,7 +153,7 @@ display: flex; */
     border-radius: 10px;
 }
 
-.card::before{
+/* .card::before{
     content: "Items";
     color: #fff;
     position: absolute;
@@ -161,7 +161,7 @@ display: flex; */
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-}
+} */
 
 .p_title::before{
     content: "";

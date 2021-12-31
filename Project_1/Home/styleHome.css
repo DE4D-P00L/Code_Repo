@@ -269,3 +269,9 @@ body{
         right: -140px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .scrollarea1 .image{
+        left: -100px;
+    }
+}
