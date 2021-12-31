@@ -3,23 +3,27 @@ ScrollTrigger.defaults({
     scroller: '.container',
 });
 
+var tl = new TimelineMax();
 
-gsap.to('.text-content',{
+
+tl.to('.text-content',{
     scrollTrigger: {
         trigger: '.scrollarea1',
         start: "top center"
     },
     opacity:1,
+    delay: 1,
     duration: 2
 });
 
 
-gsap.to('.image',{
+tl.to('.image',{
     scrollTrigger: {
         trigger: '.scrollarea1',
         start: "top center"
     },
     x: -100,
+    delay: -2,
     duration: 1
 });
 
@@ -28,7 +32,6 @@ gsap.to('.act',{
     scrollTrigger: {
         trigger: '.scrollarea1',
         start: "top center",
-        markers:true,
         toggleActions: "restart none restart none"
     },
     x: 0,
@@ -39,7 +42,6 @@ gsap.to('.act',{
     scrollTrigger: {
         trigger: '.scrollarea2',
         start: "top center",
-        markers: true,
         toggleActions: "restart none restart none"
     },
     x: 92,
