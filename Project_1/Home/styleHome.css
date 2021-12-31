@@ -258,9 +258,6 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-    .container{
-        /* overflow-y: initial; */
-    }
 
     .scrollarea1 .text-content{
         font-size: .75em;
