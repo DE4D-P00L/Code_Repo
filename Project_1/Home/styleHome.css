@@ -201,10 +201,12 @@ body{
     min-width: 680px;
     background-image: url("./wonder-day-png-cyberpunk-2077-7.png");
     background-position:center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     position: absolute;
     right: -100px;
-    filter: drop-shadow(30px 20px 10px rgba(0,0,0,0.4))
+    filter: drop-shadow(30px 20px 10px rgba(0,0,0,0.4));
 }
 
 .scrollarea1::before{
@@ -217,14 +219,15 @@ body{
 
 .scrollarea2{
     position: relative;
+    overflow: hidden;
 }
 
 .scrollarea2::before{
-    content: "02";
+    content: "03";
     position: absolute;
     top: 10%;
     right: 0;
-    font-size: 4rem;
+    font-size: calc(3vw + 3rem);
 }
 
 
@@ -237,7 +240,7 @@ body{
     position: absolute;
     top: 10%;
     right: 0;
-    font-size: 4rem;
+    font-size: calc(3vw + 3rem);
 }
 
 .box{
@@ -254,8 +257,60 @@ body{
     position: absolute;
     top: 10%;
     right: 0;
-    font-size: 4rem;
+    font-size: calc(3vw + 3rem);
 }
+
+
+.trigger2{
+    position: relative;
+    overflow: hidden;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.trigger2::before{
+    content: "02";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: calc(3vw + 3rem);
+}
+
+.trigger2 .image2{
+    display: inline-block;
+    height: 70vh;
+    aspect-ratio: .6;
+    /* background-color: #fff; */
+    background-image: url("./sm1.png");
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 60px;
+    transform: translateY(-150%);
+}
+
+.trigger2 .text-content2{
+    position: absolute;
+    right: 10vw;
+    font-size: .8vw+1rem;
+    padding: 0 25px;
+    min-width: calc(35vw + 10rem);
+    max-width: 90vw;
+    width: 4vw;
+}
+
+.trigger2 .home-title{
+    font-family: "SG",Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -265,13 +320,26 @@ body{
     }
 
     
-.scrollarea1 .image{
+    .scrollarea1 .image{
         right: -140px;
+    }
+    .trigger2 .image2{
+        left: 0;
+        opacity: 0.3;
+    }
+
+    .trigger2 .text-content2{
+        right: 10vw;
+        left: 10vw;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .scrollarea1 .image{
         left: -100px;
+    }
+
+    .trigger2 .text-content2{
+        font-size: 0.8em; 
     }
 }
