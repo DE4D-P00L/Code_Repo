@@ -4,7 +4,7 @@
 
 .--card{
     width: 150px;
-    height: 200px;
+    max-height: 205px;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -32,11 +32,13 @@
 }
 
 .--card .--card-body img{
-    object-fit: scale-down;
+    object-fit: 100% 100%;
     object-position: center center;
     height: 120px;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     border-radius: 3px;
+    margin-top: 5px;
 }
 
 
