@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#282b33;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    
+    padding: 10px;
+    padding-top: 10vh;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 80vh;
+    /* outline: 1px solid #ff0000; */
+}
+
+.title{
+    color:#fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 4rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    justify-self: flex-end;
+
+}
+
+.cards .card{
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    background-color: #afafaf;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+
+.ico1{
+    background-image: url("../img/graphic-designer.png");
+}
+
+.ico2{
+    background-image: url("../img/programmer.png");
+}
+
+.ico3{
+    background-image: url("../img/programmer (1).png");
+}
+
+.ico{
+    display: inline-block;
+    width: 100%;
+    height: 100%;    
+    background-size: 70%;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+}
+
+.card-body{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    /* outline: 1px solid #ff0000; */
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    background-color: #fff;
+    transform-origin: top;
+    transform: scaleY(0) translateX(-50%);
+    transition: transform 300ms ease-in-out;
+    border-radius: 10px;
+    box-shadow: 3px 8px 9px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-body h2{
+    font-size: 2rem;
+}
+
+.card-body p{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.socials{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+.icon1{
+    background-image: url("../img/2553040_facebook_fb_feed_logo_media_icon.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.icon2{
+    background-image: url("../img/2609558_instagram_social media_social_icon.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.icon3{
+    background-image: url("../img/5296516_tweet_twitter_twitter logo_icon.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.card:hover .card-body{
+    transform: scaleY(1) translateX(-50%) ;
+}
+
+
+
+
+
