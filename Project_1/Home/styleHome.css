@@ -42,9 +42,9 @@ body{
     background-color:#fff;
     z-index: -1;
     left: -3%;
-    top: 0;
+    bottom: 0;
     width:33%;
-    height: 100%;
+    height: 3px;
     display: inline-block;
 }
 
@@ -68,7 +68,8 @@ body{
 .navbar-home .navlinks-home .link-home a{
     text-decoration: none;
     padding: 2px 5px;
-    color: #fff;
+    color: #7cb9ff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     font-size: 1.5rem;
     font-family: 'Teko',Arial, Helvetica, sans-serif;
 }

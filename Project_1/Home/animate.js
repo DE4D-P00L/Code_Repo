@@ -65,7 +65,7 @@ gsap.to('.l2 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#000",
+    color: "#7cb9ff",
     duration: .1
 });
 
@@ -75,7 +75,7 @@ gsap.to('.l1 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#fff",
+    color: "#7cb9ff",
     duration: .1
 });
 
@@ -85,7 +85,7 @@ gsap.to('.l1 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#000",
+    color: "#7cb9ff",
     duration: .1
 });
 
@@ -95,7 +95,7 @@ gsap.to('.l2 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#fff",
+    color: "#7cb9ff",
     duration: .1
 });
 
@@ -105,7 +105,7 @@ gsap.to('.l1 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#000",
+    color: "#7cb9ff",
     duration: .1
 });
 
@@ -115,7 +115,7 @@ gsap.to('.l2 a',{
         start: "top center",
         toggleActions: "restart none restart none"
     },
-    color: "#fff",
+    color: "#7cb9ff",
     duration: .1
 });
 
