@@ -15,6 +15,8 @@ body{
     background-size: cover;
 }
 
+
+
 .body{
     background-color: transparent;
     position: relative;
@@ -136,6 +138,7 @@ body{
     font-family: 'Teko',Arial, Helvetica, sans-serif;
     scroll-snap-type: y mandatory;
     overflow-y: overlay;
+    /* pointer-events: none; */
 }
 
 .lmore{
@@ -305,12 +308,118 @@ body{
     font-family: "SG",Arial, Helvetica, sans-serif;
 }
 
+.socials{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li a .icon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    z-index: 200;
+    pointer-events: all;
+    /* outline:1px solid #fff; */
+}
+
+.icon1{
+    background: url("./2553040_facebook_fb_feed_logo_media_icon.png");
+}
+
+.icon2{
+    background: url("./2609558_instagram_social media_social_icon.png");
+}
+
+.icon3{
+    background: url("./5296516_tweet_twitter_twitter logo_icon.png");
+}
 
 
+#s3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#s3 h2{
+    /* outline: 1px solid #ff0000; */
+    display: block;
+    width: 100%;
+    font-size: 2.3rem;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+#s3 .text-content2{
+    padding: 0px calc(2vw + 5rem);
+    /* align-self: flex-start; */
+    margin-top: 20px;
+    font-size: 0.9em;
+    max-width: 75vw;
+    font-weight: 300;
+}
+
+#s3 .uline{
+    height:2px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,1) 50%,rgba(255,255,255,0));
+    display: inline-block;
+    width: 80%;
+}
+
+#s3 .cards{
+    /* position: absolute;
+    bottom: 20vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-top: 50px;
+    height: 250px;
+    min-height: 200px;
+    justify-self: flex-end;
+    /* outline: 1px solid #ff0000; */
+
+}
+
+#s3 .cards .card{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    background-color: #0000ff;
+
+}
 
 
+@media only screen and (max-width: 1100px) {
+    #s3 .t2{
+        font-size: 0.8em;
+    }
 
+}
 
+@media only screen and (max-width: 540px) {
+    #s3 .t2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #s3 .cards{
+        display: none;
+        padding: 0 20px;
+    }
+
+    #s3 .text-content2{
+        font-size: 0.8em;
+        padding: 0 20px;
+    }
+}
+
+/* #s3 .cards */
 
 @media only screen and (max-width: 768px) {
 
@@ -332,6 +441,11 @@ body{
         right: 10vw;
         left: 10vw;
     }
+
+    #s3 h2{
+        margin-top: 140px;
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -342,4 +456,10 @@ body{
     .trigger2 .text-content2{
         font-size: 0.8em; 
     }
+
+    #s3 .text-content2{
+        padding: 0 0px;
+    }
 }
+
+/* #282b33 */
