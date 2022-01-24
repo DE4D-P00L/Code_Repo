@@ -29,7 +29,8 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: calc(100vh - 110px);
+    /* height: calc(100vh - 110px); */
+    height:100vh;
     background-color:rgb(38,38,38);
     border-radius: 15px;
     overflow: hidden;
@@ -60,13 +61,13 @@ input{
     border: 0;
     border-bottom: 1px solid rgb(99, 102, 110);
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .title{
     grid-column: -1/1;
     margin: 15px 0;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 #lname{
@@ -108,6 +109,7 @@ textarea{
 }
 
 .contacts>h2{
+    margin-top: 100px;
     color: #fff;
     font-size: 3rem;
 }

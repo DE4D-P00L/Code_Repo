@@ -64,6 +64,7 @@ body{
     position: relative;
     border-radius: 10px;
     z-index: 2;
+    transform: translateY(200px);
 }
 
 

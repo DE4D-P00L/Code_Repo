@@ -127,3 +127,15 @@ gsap.to('.image2',{
     y:0,
     duration: 1
 });
+
+gsap.to('.scrollarea2 .text-content2',{
+    scrollTrigger: {
+        trigger: '.scrollarea2',
+        start: "top center",
+        toggleActions: "restart none restart none"
+    },
+    opacity:1,
+    duration: 1,
+    stagger:1.3,
+    clipPath:'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'
+});

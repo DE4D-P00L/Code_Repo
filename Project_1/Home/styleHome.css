@@ -363,6 +363,8 @@ li a .icon{
     font-size: 0.9em;
     max-width: 75vw;
     font-weight: 300;
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 #s3 .uline{
