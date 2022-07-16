@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-;
+}
+
+body{
+    min-height:100vh;
+    width:100%;
+    display: grid;
+    place-items: center;
+    background-color:#000;
+    position: relative;
+    z-index: 1;
+}
+
+#quotes-box::after{
+    content: "";
+    background: url("b.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter:blur(5px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position:absolute;
+    z-index: -1;
+}
+
+#quotes-box{
+    padding: 15vw;
+    /* outline: 1px solid #ff0000; */
+    color: #fff;
+    font-size: 3.2em;
+    /* font-weight: bold; */
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.box{
+    margin-top: 30px;
+    font-size: .8em;
+    font-style: italic;
+    text-align: right;
+}
