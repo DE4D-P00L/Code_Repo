@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save2PDF</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container" id="mark_sheet">
+        <h1>MCA Marks Summary Sheet</h1>
+        <h2>Session: July 2022</h2>
+        <table cellpadding="0" cellspacing="0">
+            <th>S.no</th>
+            <th>Roll no</th>
+            <th>Student Name</th>
+            <th>Max Marks</th>
+            <th>Obtained Marks</th>
+            <tr>
+                <td>1</td>
+                <td>21/FCA/MCA/001</td>
+                <td>A</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>21/FCA/MCA/002</td>
+                <td>B</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>21/FCA/MCA/003</td>
+                <td>C</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+        </table>
+        <button class="btn" onclick="getSheet()">Download pdf</button>
+    </div>
+    <script>
+        const getSheet = ()=>{
+            var element = document.getElementById('mark_sheet');
+            var opt = {
+            margin:       1,
+            filename:     'myfile.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            // New Promise-based usage:
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+</html>
