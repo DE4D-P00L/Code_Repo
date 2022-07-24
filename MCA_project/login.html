@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Styles/user.css">
+</head>
+<body>
+    <div class="form-box">
+        <div class="logo-container">
+            <img src="./images/log-img.png" alt="" class="logo">
+        </div>
+        <div class="form-container">
+            <div class="flex-form">
+                <form action="./Scripts/server_login.php" class="form log-form" method="post">
+                    <h1>Login</h1>
+                    <input type="email" name="email" id="email" required class="inp" placeholder="Enter E-Mail">
+                    <input type="password" name="password" id="password" required class="inp" placeholder="Enter Password">   
+                    <input type="submit" value="Login">
+                    <span class="extra">Need an account? <p class="toNextPage">Register</p></span>
+                </form>
+                <form action="./Scripts/server.php" class="form reg-form" method="post">
+                    <h1>REGISTER</h1>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" class="inp" required>
+                    <input type="email" placeholder="Enter E-Mail" name="email" id="email" class="inp" required>
+                    <input type="password" name="password" placeholder="Enter Password" id="password" class="inp" required>   
+                    <input type="submit" value="Register">
+                    <span class="extra">Already have an account? <p class="toNextPage">Login</p></span>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>
