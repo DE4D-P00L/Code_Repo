@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Doppio One' rel='stylesheet'>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="nav">
+            <h2 class="logo">Logo</h2>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="" class="link">Home</a></li>
+                <li class="nav-link"><a href="" class="link">Home</a></li>
+                <li class="nav-link"><a href="" class="link">Home</a></li>
+                <li class="nav-link"><a href="" class="link">Home</a></li>
+            </ul>
+            <button class="logout">Log-out</button>
+        </nav>
+    </div>
+
+    <button class="mode-switch"></button>
+
+    <div class="hero">
+        <div class="hero-div">
+            <div class="text-content">
+                <h2 class="heading">Heading heading</h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloremque nihil eos necessitatibus praesentium aspernatur accusamus delectus. 
+                    Inventore, labore.
+                </p>
+                <a href="" class="cta">Know more</a>
+            </div>
+            <div class="image-content"></div>
+        </div>
+    </div>
+    <script>
+        var r = document.querySelector(':root');
+        var isLight = true;
+        var btn =document.querySelector(".mode-switch");
+
+        btn.addEventListener('click',(e)=>{
+            // e.preventDefault();
+            btn.classList.toggle('active');
+            if(isLight){
+                r.style.setProperty('--bg-color', '#25262f');
+                r.style.setProperty('--fg-color', '#fff');
+            }
+            else{
+                r.style.setProperty('--bg-color', '#fff');
+                r.style.setProperty('--fg-color', '#25262f');
+            }
+            isLight = !isLight;
+        })
+        </script>
+</body>
+</html>
