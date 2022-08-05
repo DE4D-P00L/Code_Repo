@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mode-switch"></div>
+    <div class="holder">
+        <div class="graphics">
+            <!-- <iframe src='https://my.spline.design/islandhousecopy-f40f9bfd9a92c2e4918590d5770bebe2/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <!-- <iframe src='https://my.spline.design/macbookprocopy-f43f6b58a8a88f6ed68d27d33fd1c55d/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <!-- <iframe src='https://my.spline.design/interactivespherescopy-422a1d08b8c69e1c0d9851b8f59a103f/' frameborder='0' ></iframe> -->
+            <!-- <iframe src='https://my.spline.design/untitled-ffb853bd65899144640f57427a144ed0/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <!-- <iframe src='https://my.spline.design/untitled-ffb853bd65899144640f57427a144ed0/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <!-- <iframe src='https://my.spline.design/macbookprocopy-f43f6b58a8a88f6ed68d27d33fd1c55d/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <!-- <iframe src='https://my.spline.design/friendskawaiicopy-a399fad3cbec766626eea9cf3956ecb4/' frameborder='0' width='100%' height='100%'></iframe> -->
+            <iframe src='https://my.spline.design/bandingcopy-ad77e088a7de04875184363c9b87cab8/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
+        <div class="container">
+            <h2 class="f_head">Add to Inventory</h2>
+            <div class="form-container">
+                <form class="form"  action="index.php" method="post" enctype="multipart/form-data">
+                    <div class="inp-row">
+                        <input type="text" name="pname" id="pname" class="inp" required autocomplete="off">
+                        <span>product name</span>
+                    </div>
+                    <div class="inp-row">
+                        <input type="number" name="qty" id="qty" class="inp" required autocomplete="off">
+                        <span>Quantity</span>
+                    </div>
+                    
+                    <fieldset>
+                        <legend>Category</legend>
+                        <select name="" id="">
+                            <option value="" selected>--Select--</option>
+                            <option value="">Item</option>
+                            <option value="">Item</option>
+                            <option value="">Item</option>
+                            <option value="">Item</option>
+                        </select>
+                        <input type="text" name="cat" id="cat" placeholder="Category" class="inp">
+                    </fieldset>
+                    <fieldset class="fs">
+                        <legend>Display Image</legend>
+                        <div class="box">
+                            <input type="file" name="image" class="file" accept="image/*" onchange="preview()">
+                                <!-- <span>OR</span> -->
+                            <!-- <input type="url" name="url" id="url" class="inp url" placeholder="http://example.com/image.jpg"> -->
+                        </div>
+                        <div class="image">
+                            <img id="thumb" src="./a (1).png" width="100%" height="100%" alt="Preview"/>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="sub-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var _url = document.getElementById("url");
+        var file = document.querySelector(".file");
+        // console.log(_url);
+
+        if(file.files.length != 0){
+            _url.disabled = true;
+        }
+        function preview() {
+            var thumb = document.getElementById("thumb");
+            thumb.src=URL.createObjectURL(event.target.files[0]);
+        }
+
+
+        // darkmode
+        var r = document.querySelector(':root');
+        var isLight = false;
+        var btn =document.querySelector(".mode-switch");
+
+        btn.addEventListener('click',(e)=>{
+            // e.preventDefault();
+            btn.classList.toggle('active');
+            if(isLight){
+                r.style.setProperty('--primary', '#1d1d1d');
+                r.style.setProperty('--secondary', '#fafafa');
+                r.style.setProperty('--border', 'rgba(31, 31, 31, 1)');
+                document.body.style = 'background-color:#fff';
+            }
+            else{
+                r.style.setProperty('--primary', '#00dfc4');
+                r.style.setProperty('--secondary', '#1b2b3a');
+                r.style.setProperty('--border', 'rgba(255, 255, 255, 0.25)');
+                document.body.style = "background-image: radial-gradient(ellipse at center, #335476 0.0%, #31506e 11.1%, #304b67 22.2%, #2f4760 33.3%, #2d4359 44.4%, #2c3f51 55.6%, #2a3a4a 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%);";
+            }
+            isLight = !isLight;
+        })
+    </script>
+</body>
+</html>
