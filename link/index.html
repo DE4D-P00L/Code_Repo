@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="mode-switch"></div>
     <div class="holder">
         <div class="graphics">
             <!-- <iframe src='https://my.spline.design/islandhousecopy-f40f9bfd9a92c2e4918590d5770bebe2/' frameborder='0' width='100%' height='100%'></iframe> -->
@@ -55,16 +56,47 @@
                             <img id="thumb" src="./a (1).png" width="100%" height="100%" alt="Preview"/>
                         </div>
                     </fieldset>
-                    <input type="submit" class="sub-btn"/>
+                    <button type="submit" class="sub-btn">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     <script>
+        var _url = document.getElementById("url");
+        var file = document.querySelector(".file");
+        // console.log(_url);
+
+        if(file.files.length != 0){
+            _url.disabled = true;
+        }
         function preview() {
             var thumb = document.getElementById("thumb");
             thumb.src=URL.createObjectURL(event.target.files[0]);
         }
+
+
+        // darkmode
+        var r = document.querySelector(':root');
+        var isLight = false;
+        var btn =document.querySelector(".mode-switch");
+
+        btn.addEventListener('click',(e)=>{
+            // e.preventDefault();
+            btn.classList.toggle('active');
+            if(isLight){
+                r.style.setProperty('--primary', '#1d1d1d');
+                r.style.setProperty('--secondary', '#fafafa');
+                r.style.setProperty('--border', 'rgba(31, 31, 31, 1)');
+                document.body.style = 'background-color:#fff';
+            }
+            else{
+                r.style.setProperty('--primary', '#00dfc4');
+                r.style.setProperty('--secondary', '#1b2b3a');
+                r.style.setProperty('--border', 'rgba(255, 255, 255, 0.25)');
+                document.body.style = "background-image: radial-gradient(ellipse at center, #335476 0.0%, #31506e 11.1%, #304b67 22.2%, #2f4760 33.3%, #2d4359 44.4%, #2c3f51 55.6%, #2a3a4a 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%);";
+            }
+            isLight = !isLight;
+        })
     </script>
 </body>
 </html>

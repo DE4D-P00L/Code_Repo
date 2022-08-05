@@ -1,3 +1,12 @@
+:root{
+    /* --primary:#00dfc4;
+    --secondary:#1b2b3a;
+    --border:rgba(255, 255, 255, 0.25); */
+    --primary:#1d1d1d;
+    --secondary:#fafafa;
+    --border:rgb(31, 31, 31);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -10,9 +19,54 @@ body{
     place-items: center;
     min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(to right, #ff00cc, #333399);
+    /* background: linear-gradient(to right, #ff00cc, #333399); */
+    /* background-image: radial-gradient(ellipse at center, #335476 0.0%, #31506e 11.1%, #304b67 22.2%, #2f4760 33.3%, #2d4359 44.4%, #2c3f51 55.6%, #2a3a4a 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%); */
     /* background-color:#4825c7; */
 }
+
+.mode-switch{
+    position: fixed;
+    top: 60px;
+    right: 30px;
+    background-color:var(--primary);
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    z-index: 999;
+    padding: 0px;
+    display: inline-block;
+    width:40px;
+    height:20px;
+    border-radius:999px;
+}
+
+.mode-switch::before{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height: 85%;
+    aspect-ratio: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    /* transform: translateX(-10px); */
+    background:var(--secondary);
+    border-radius: 50%;
+}
+
+.mode-switch.active::before{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height: 85%;
+    aspect-ratio: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    /* transform: translateX(-10px); */
+    background:var(--secondary);
+    border-radius: 50%;
+}
+
 
 .holder{
     display: flex;
@@ -23,7 +77,7 @@ body{
     /* border:1px solid #26272f; */
     box-shadow: 5px 5px 6px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    background: #1b2b3a;
+    background: var(--secondary);
 }
 
 .graphics{
@@ -40,7 +94,7 @@ body{
 
 .container{
     /* background-color:#fff; */
-    background: #1b2b3a;
+    background: var(--secondary);
     z-index: 2;
     border-radius:10px;
     position: relative;
@@ -74,7 +128,7 @@ body{
 
 .inp-row span{
     text-transform:uppercase;
-    color: rgba(255, 255, 255, 0.25);
+    color: var(--border);
     position: absolute;
     
     z-index: 1;
@@ -91,51 +145,53 @@ body{
     padding: 2px 5px;
     transform: translate(10px,-50%);
     font-size: .8em;
-    color:#1b2b3a;
-    background-color: #00dfc4;
+    color:var(--secondary);
+    background-color: var(--primary);
 }
 
 .inp-row .inp:valid,
 .inp-row .inp:focus{
-    border-color: #00dfc4;
-    color:#00dfc4;
+    border-color: var(--primary);
+    color:var(--primary);
 }
 
 .inp{
     display: block;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
     outline: none;
-}
-
-.inp{
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    color: rgba(255, 255, 255, 0.25);
-    background:#1b2b3a;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: var(--border);
+    background:var(--secondary);
+    border: 1px solid var(--border);
+}
+
+#file-upload-button{
+    background:var(--secondary);
+    border: 1px solid var(--border);
 }
 
 fieldset{
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #00dfc4;
-    color:#00dfc4;
+    border: 1px solid var(--primary);
+    color:var(--primary);
     max-width: 100%;
 }
 
 select{
     width: 50%;
     padding:5px 10px;
-    background: #1b2b3a;
-    color:#00dfc4;
+    background: var(--secondary);
+    color:var(--primary);
 }
 
 .f_head{
     text-align: center;
     padding-top:20px;
-    color:#00dfc4;
+    color:var(--primary);
 }
 
 .image{
@@ -144,7 +200,7 @@ select{
     height: 100px;
     /* background-color: aqua; */
     flex: 1;
-    border: 1px solid #26272f;
+    border: 1px solid var(--secondary);
 }
 iframe{
     /* position: fixed; */
@@ -182,14 +238,20 @@ iframe{
 .sub-btn{
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    display: block;
+    margin: 10px auto;
     border-radius: 5px;
-    border: 1px solid #00dfc4;
-    background-color:#1b2b3a;
-    color:#00dfc4;
+    border: 1px solid var(--primary);
+    background-color:var(--secondary);
+    color:var(--primary);
     font-size: 1.2em;
     padding: 15px;
+    position: relative;
+    cursor: pointer;
 }
+
+
+
 
 #cat,#url{
     font-size: 1em;
@@ -218,3 +280,4 @@ iframe{
         border-radius: 0px;
     }
 }
+
