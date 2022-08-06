@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="bg">
     <div class="mode-switch"></div>
     <div class="holder">
         <div class="graphics">
@@ -42,8 +42,14 @@
                             <option value="">Item</option>
                             <option value="">Item</option>
                             <option value="">Item</option>
+                            <option value="">Item</option>
+                            <option value="">Item</option>
+                            <option value="">Item</option>
                         </select>
-                        <input type="text" name="cat" id="cat" placeholder="Category" class="inp">
+                        <div class="inp-row">
+                            <input type="text" name="cat" id="cat" placeholder="Category" class="inp">
+                            <!-- <input type="number" name="qty" id="qty" class="inp" required autocomplete="off"> -->
+                        </div>
                     </fieldset>
                     <fieldset class="fs">
                         <legend>Display Image</legend>

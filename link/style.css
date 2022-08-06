@@ -163,6 +163,11 @@ body{
     color:var(--primary);
 }
 
+.inp-row #cat:focus{
+    border-color: var(--primary);
+    color:var(--primary);
+}
+
 .inp{
     display: block;
     width: 100%;
@@ -198,6 +203,9 @@ select{
     padding:5px 10px;
     background: var(--secondary);
     color:var(--primary);
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    outline: none;
 }
 
 .f_head{
@@ -306,6 +314,11 @@ iframe{
 
 #cat,#url{
     font-size: 1em;
+}
+
+#cat{
+    border-color: var(--border);
+    color:var(--primary);
 }
 
 #thumb{
